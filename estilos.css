@@ -14,10 +14,10 @@ html {
 .grilla {
     display: grid;
     width: 100%;
-    height: 37rem;
+    height: auto;
     grid-row-gap: 5rem;
     grid-template-columns: repeat(5, 1fr); /* Cinco columnas iguales */
-    grid-template-rows: minmax(37rem, 1fr) minmax(25rem, 1fr) minmax(37rem, 1fr) minmax(37rem, 1fr) minmax(55.5rem, 1fr) minmax(48.1rem, 1fr) minmax(28rem, 1fr) minmax(1rem, 1fr);
+    grid-template-rows: minmax(37rem, 1fr) minmax(rem, 1fr) minmax(25rem, 1fr) minmax(37rem, 1fr) minmax(55.5rem, 1fr) minmax(48.1rem, 1fr) minmax(28rem, 1fr) minmax(1rem, 1fr);
     grid-template-areas: 
         "grillainicio grillainicio grillainicio grillainicio grillainicio"
         "SobreMiranda SobreMiranda SobreMiranda SobreMiranda SobreMiranda"
@@ -92,14 +92,12 @@ html {
 
 
 .grillainicio{
-padding-top: 5rem;
     background-image: url("./imagenes/landimg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
     grid-area: grillainicio;
     display: grid;
-        grid-row-gap: 5rem;
-
     width: 100%;
     height: 37rem;
     grid-template-columns:50% 50% ;
@@ -110,7 +108,6 @@ padding-top: 5rem;
 .anuncio{
     grid-area: anuncio;
     padding-left: 1.3rem; 
-    align-items: center; 
 }
 .mail{
     grid-area: mail;
@@ -129,31 +126,37 @@ padding-top: 5rem;
     height: 35rem;
     grid-area: SobreMiranda;
     background-image: url("./imagenes/miranda.png");
+    
     background-size:contain;
     background-repeat: no-repeat; 
+    align-items: center;
     margin-left: 0.625rem;
     margin-right: 0.625rem;
     border-radius: 0.9375rem;
     
 }
 .h2SobreMiranda{
-    padding-right: 50%;
-    padding-left: 5%;
-    padding-top: 5%;
+    padding-right: 50rem;
+    padding-left: 5rem;
+    padding-top: 1rem;
 }
 .pSobreMiranda{
-    padding-right: 50%;
-    padding-left: 5%;
-    padding-top: 0%;
-
+    padding-right: 35rem;
+    padding-left: 5rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    white-space: wrap;
 }
 
 .Sobrenosotros{
     height: 40rem;
     grid-area: Sobrenosotros;
     background-image: url("./imagenes/fotosobrenosotros.png");
+    
     background-repeat: no-repeat; 
     background-size:contain;
+    align-items: center;
     margin-right: 0.625rem;
 
 }
@@ -166,6 +169,9 @@ padding-top: 5rem;
     padding-right: 70%;
     padding-left: 5%;
     padding-top: 3%;
+    display: flex;
+    align-items: center;
+    white-space: wrap;
    
     
 }
@@ -175,6 +181,7 @@ padding-top: 5rem;
     background-image: url("./imagenes/imgvideos.png");
     background-repeat: no-repeat;
     background-size:contain;
+    align-items: center;
     margin-right: 0.625rem;
     margin-left: 0.625rem;
     background-size: 100% 100%;
@@ -198,8 +205,9 @@ padding-top: 5rem;
    
     grid-area: comentarios;
     background-image: url("./imagenes/imgcomentarios.png");
- 
+    background-repeat: no-repeat;
     background-size:cover;
+    align-items: center;
 
     margin-right: 0.625rem;
     margin-left: 0.625rem;
@@ -230,9 +238,8 @@ padding-top: 5rem;
     display: none;
   }
   .item { /* tamaño carrousel  */
-    margin-top: 2rem;
     flex-shrink: 0;
-    width: 40rem;
+    width: 50%;
 
    scroll-snap-align: center;
   }
@@ -301,7 +308,7 @@ select{
     grid-area: massobremiranda;
     background-image: url("./imagenes/mirandainfo.png");
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
 
 }
 .h2massobremiranda{
@@ -315,8 +322,8 @@ select{
 }
 .pmassobremiranda{
     color: rgb(255, 255, 255);
-    padding-top: 13%;
-    padding-left: 27%;
+    padding-top:9.4rem;
+    padding-left: 22rem;
     text-align: left;
     text-decoration: underline;
 
@@ -333,6 +340,7 @@ footer{
 }
 h1{
     font-size: 90px;
+    margin: 0;
 
 }
 h2{
@@ -527,14 +535,12 @@ button{ /* boton de flechas*/
 
     .SobreMiranda, .Sobrenosotros, .programas, .comentarios, .form, .massobremiranda {
         margin: 1.25rem 0.625rem;
-        background-position: center;  
+     
         
     }
     .SobreMiranda{
         background-image: url(./imagenes/sobremirandamobile.png);
 background-size: contain;
-    }
-    .h2SobreMiranda{
     }
     .Sobrenosotros{
         background-image: url(./imagenes/nosm.png);
