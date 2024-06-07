@@ -495,7 +495,6 @@ button{ /* color boton de flechas*/
     }
     .grilla {
         display: grid;
-        font-size: .;
         width: 100%;
         height: auto;
         grid-row-gap: 20px;
