@@ -626,12 +626,13 @@ button{ /* color boton de flechas*/
         align-items: center;
     }
     .massobremiranda {
+        height: 910px;
         grid-area: massobremiranda;
         background-image: url("./imagenes/masm.png");
         background-repeat: no-repeat;
    
         background-size: cover;
-        height: 1500px;
+        
 
     }
     footer{
