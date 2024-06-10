@@ -1,0 +1,796 @@
+
+/* CSS DE ESCRITORIO YA TERMINADO */
+body, html {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+
+}
+
+html {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    white-space: wrap;
+}
+
+.grilla {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-row-gap: 5rem;
+    grid-template-columns: repeat(5, 1fr); /* Cinco columnas iguales */
+    grid-template-rows: minmax(37rem, 1fr) minmax(25rem, 1fr) minmax(35rem, 1fr) minmax(37rem, 1fr) minmax(45rem, 1fr) minmax(48.1rem, 1fr) minmax(28rem, 1fr) minmax(7rem, 1fr);
+    grid-template-areas: 
+        "grillainicio grillainicio grillainicio grillainicio grillainicio"
+        "SobreMiranda SobreMiranda SobreMiranda SobreMiranda SobreMiranda"
+        "Sobrenosotros Sobrenosotros Sobrenosotros Sobrenosotros Sobrenosotros"
+        "programas programas programas programas programas"
+        "comentarios comentarios comentarios comentarios comentarios"
+        "formulario formulario formulario formulario formulario" 
+        "massobremiranda massobremiranda massobremiranda massobremiranda massobremiranda"
+        "footer footer footer footer footer";
+}
+.grillaform {
+    grid-area: formulario;
+    background-color: #0D0D0D;
+    display: grid;
+    height: 100%;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+      "banner"
+      "formularioEntrada";
+  }
+  
+  .banner {
+    grid-area: banner;
+    width: 100%;
+    background-color: #4D26B3;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 10rem;
+    
+    border-radius: 0.5rem;
+
+  }
+  .h1bannerEntrada{
+    margin: 0;
+    margin-top: 2rem;
+  }
+  
+  .formularioEntrada {
+    grid-area: formularioEntrada;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #formulario {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+   
+  }
+  
+  .grillaNombrenum, .grillaColumna {
+    flex: 1 1 50%;
+
+  }
+  
+  .grillaColumna {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+ 
+  .grillaboton input {
+    padding: 0.625rem 1.25rem;
+    background-color: #4D26B3;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+.grillainicio{
+    background-image: url("./imagenes/landimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    grid-area: grillainicio;
+    display: grid;
+    width: 100%;
+    height: 37rem;
+    grid-template-columns:50% 50% ;
+    grid-template-rows:100% ;
+    grid-template-areas: 
+    "anuncio  mail "
+}
+.anuncio{
+    grid-area: anuncio;
+    margin-left: 10%;
+}
+.mail{
+    grid-area: mail;
+    padding-left: 30%;
+    text-align: left;
+    margin-RIGHT: 10px;
+}
+.pvortex{
+    
+   
+    font-size: 1.25rem;
+}
+
+.SobreMiranda{
+    height: 25rem;
+    grid-area: SobreMiranda;
+    background-image: url("./imagenes/miranda.png");
+    
+    background-size:cover;
+    background-repeat: no-repeat; 
+    
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    border-radius: 0.9375rem;
+    
+}
+.h2SobreMiranda{
+    padding-right: 50%;
+    padding-left: 5%;
+    padding-top: 1rem;
+}
+.pSobreMiranda{
+    padding-right: 50%;
+    padding-left: 5%;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    white-space: wrap;
+}
+
+.Sobrenosotros{
+    height: 40rem;
+    grid-area: Sobrenosotros;
+    background-image: url("./imagenes/fotosobrenosotros.png");
+    
+    background-repeat: no-repeat; 
+    background-size:contain;
+    align-items: center;
+    margin-right: 0.625rem;
+
+}
+.h2Sobrenosotros{
+    padding-right: 50%;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+.pSobrenosotros{
+    padding-right: 70%;
+    padding-left: 5%;
+    padding-top: 3%;
+    display: flex;
+    align-items: center;
+    white-space: wrap;
+   
+   
+    
+}
+.programas{
+    
+    grid-area: programas;
+    background-image: url("./imagenes/imgvideos.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    align-items: center;
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
+    background-size: 100% 100%;
+}
+.h2programas{
+    padding-right: 50%;
+    padding-left: 5%;
+    
+}
+
+.pprogramas{
+    margin-top: 25rem;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+   padding: 0;
+}
+.pprogramas:hover {
+    color: #4D26B3; /* Color del texto cuando se pasa el cursor */
+    transition: color 0.3s ease
+}
+.comentarios{
+   
+    grid-area: comentarios;
+    background-image: url("./imagenes/imgcomentarios.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    align-items: center;
+
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
+}
+
+.imagen{
+   width: 65%;
+   height: auto;
+}
+.h2-comentarios{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    
+    padding-right: 50%;
+    padding-left: 5%;
+    padding-top: 0%;
+   
+}
+.list {
+    display: flex;
+  
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  -ms-overflow-style: none;
+  }
+  .list::-webkit-scrollbar {
+    display: none;
+  }
+  .item { /* tamaño carrousel  */
+    flex-shrink: 0;
+    width: 50%;
+
+   scroll-snap-align: center;
+  }
+  
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  
+    font-family: sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+  }
+
+  .list-wrapper {
+    position: relative;
+  }
+  
+  .button {
+    position: absolute;
+    top: 50%;
+  
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+  
+    
+  }
+  
+  .button--previous {
+    left: 1.5rem;
+    border-radius: 100%;
+    transform: rotate(180deg);
+    cursor: pointer;
+ 
+  }
+  
+  .button--next {
+    right: 1.5rem;
+    border-radius: 100%;
+    cursor: pointer;
+
+  }
+  
+
+.form{
+    grid-area: form; 
+ align-items: center;
+    background-size: 100% 100%;
+}
+.h1form{
+    text-align: center;
+}
+select{
+    background-color: #2D2D2D;
+    border: #0D0D0D;
+    color: #ddd;
+    width: fit-content;
+    border-radius: 0.3125rem;
+    width: 22.5rem;
+    height: 3rem;
+    padding-left: 2.5rem;
+    cursor: pointer;
+}
+.massobremiranda{
+    grid-area: massobremiranda;
+    background-image: url("./imagenes/mirandainfo.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+
+}
+.h2massobremiranda{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding-right: 31.25rem;
+    padding-left: 2rem;
+    padding-top: 20px;
+    margin: 0;
+
+}
+.pmassobremiranda{
+    margin-top: 14rem;
+    padding-left: 21.5rem;
+    text-align: left;
+    text-decoration: underline;
+
+
+}
+a.enlace{
+          color: #fafafa; /* Color del texto cuando se pasa el cursor */
+        transition: color 0.3s ease
+   
+}
+a.enlace:hover {
+    color: #4D26B3; /* Color del texto cuando se pasa el cursor */
+  
+
+}
+footer{
+    grid-area: footer;
+    background-color:  #0D0D0D;
+    background-image: url(./imagenes/footer.png);
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+h1{
+    font-size: 90px;
+    margin: 0;
+    white-space: nowrap;
+   
+
+}
+.h2A{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: 54px;
+   
+}
+h3{
+    font-size: 35px;
+}
+.h4boton{
+    font-size: 1.50rem;  
+     margin: 0;
+}
+h4{
+    font-size: 25px;
+}
+h1, h2, h3, h4{
+    font-family: "League Gothic", sans-serif;
+    font-weight: lighter;
+
+}
+p{
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img{
+    display: block;
+}
+input[ type="text" ]{
+    background-color: #2D2D2D;
+    border: #0D0D0D;
+    color: #ddd;
+    border-radius: 0.3125rem;
+    width: 20rem;
+    height: 3rem;
+    padding-left: 2.5rem;
+}
+
+input[ type= "number"]{
+    background-color: #2D2D2D;
+    border: #0D0D0D;
+    color: #ddd;
+    border-radius: 0.3125rem;
+    width: 20rem;
+    height: 3rem;
+    padding-left: 2.5rem;
+
+
+}
+input[ type="email" ]{
+    background-color: #2D2D2D;
+    border: #0D0D0D;
+    color: #ddd;
+    margin-left: 1%;
+    padding-block: 15px;  
+    padding-left: 40px;
+    padding-right: 80px;
+    border-radius: 0.3125rem;
+   width: 12.5rem;
+    height: 2rem;
+   
+}
+.Participar{ 
+    background-color:#A5DB00;
+     
+    color: #000000;  
+   margin-left: 2.8rem;
+   margin-top: 1.25rem;
+
+    margin-right: 4rem;
+   border-radius: 0.5rem;
+   width: 20rem;
+   height: 4rem
+   
+   
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    white-space: wrap;
+    padding-left: 2rem;
+    padding-right: 50px;
+}
+.checkbox {
+    margin-right: 8px; 
+    margin-left: 10px;
+}
+input[ type="submit" ]{/* boton de participar */
+    background-color: #A5DB00;
+    cursor: pointer;
+   
+    color: #000000;  
+    font-family: "League Gothic", sans-serif;
+    font-size: 1.50rem; 
+   border-radius: 5px;
+   width: 22.5rem;
+   height: 4rem;
+   margin-top: 10%;
+
+   
+}
+button{ /* color boton de flechas*/
+    background-color: #a4db00; 
+    color: #000000;  
+    
+}
+.logovorterix{
+    margin-top: 1.25rem;
+}
+
+/* CONTENEDOR INVISIBLE - MENSAJE */
+
+
+.agradecimiento {
+    background-image:url(./imagenes/mirandaagr.png);
+    display: none; /* Oculto inicialmente */
+    position: fixed;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+}
+
+
+#btn-volver {
+    background-color: #A5DB00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 6rem;
+    width: 15rem;
+    height: 6rem;
+    text-align: center;
+}
+#btn-volver:hover {
+    background-color: #A8D15F;
+}
+
+
+
+/* A PARTIR DE ACÁ ES MOBILE */ 
+
+
+@media (max-width: 768px) {
+    html,body{
+        margin:0;
+        padding: 0;
+        white-space: wrap;
+    }
+    .grilla {
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-row-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            "grillainicio"
+            "SobreMiranda"
+            "Sobrenosotros" 
+            "programas"
+            "comentarios"
+            "formulario"
+            "massobremiranda"
+            "footer";
+    }
+    .SobreMiranda, .Sobrenosotros, .programas, .comentarios, .form, .massobremiranda {
+        overflow: hidden;
+      white-space: wrap;
+        padding: 0;
+        margin: 0;
+    }
+    .h2SobreMiranda, .h2Sobrenosotros, .h2programas, .h2massobremiranda,.h2-comentarios {
+        font-size: 40px;
+        padding: 0;
+        margin: 0;
+}
+.pSobreMiranda, .pSobrenosotros, .pprogramas, .pmassobremiranda {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+    
+    .miimagen {
+        display: none;
+    }
+    .grillainicio {
+        height: max-content;
+        background-image: url(./imagenes/mirandamobile.png);
+      background-size: cover;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "anuncio"
+            "mail";
+            
+    }
+    .pvortex{
+        font-size: 16px;
+    }
+    .anuncio, .mail {     
+        overflow: hidden;
+      white-space: wrap;
+
+    }
+    .anuncio{
+        align-self: center;
+        margin-top: 15%;
+    
+    }
+
+    .mail{
+        padding: 0;
+        align-self: center;
+
+        margin-bottom: 10%;
+
+    }
+    .checkbox-container{
+        padding: 0;
+        margin-left: 40px;
+    }
+    input[type="email"] {
+        width: 50%;
+        height: 30px;
+        margin-top: 5px;
+
+    }
+    input[ type= "number"]{
+        width: 250px;
+        height: 40px;
+        margin-bottom: 10%;
+    }
+    input[ type="text" ]{
+        width: 250px;
+        height: 40px;
+        margin-bottom: 10%;
+    }
+    select{
+        width: 290px;
+        height: 40px; 
+        margin-bottom: 10%;
+    }
+    input[ type="submit" ]{/* boton de participar */  
+        width: 290px;
+        height: 50px;
+        margin-bottom: 5%;
+    }
+    .SobreMiranda{
+        background-image: url(./imagenes/sobremirandamobile.png);
+        background-size: cover;  
+        height: 260px;
+    }
+    .h2SobreMiranda,.pSobreMiranda,.h2Sobrenosotros,.pSobrenosotros,.h2programas,.h2-comentarios{
+    margin-right: 7px;
+    margin-left: 40px;
+    }
+  .h2SobreMiranda{
+    margin-top:20px;
+  }
+  .h2programas,.h2Sobrenosotros, .h2-comentarios{
+    margin-top: 2px;
+  }
+  .pSobrenosotros{
+    margin-top: 10PX;
+    
+  }
+    .Sobrenosotros{
+        background-image: url(./imagenes/nosm.png);
+        background-size: contain;
+      height: 427px;
+
+    }
+    .programas {
+        background-image: url(./imagenes/progm.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 280px;
+        width: auto;
+    }
+    .pprogramas{
+        text-align: center;
+        margin-top: 52%;
+    }
+    .item {
+        flex-shrink: 0;
+        width: 110%;
+        scroll-snap-align: center;
+    }
+  
+    .list-wrapper {
+        height: max-content;
+    }
+    .button {
+        display: none;
+    }
+
+
+    .comentarios{
+        background-color: #0D0D0D;
+    background-image: url(./imagenes/imgcomentarios.png);
+    height: 439px;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .massobremiranda {
+        background-image: url("./imagenes/masm.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .h2massobremiranda{
+     text-align: center;   
+    }
+    .pmassobremiranda{
+        margin: 0;
+        margin-top: 37%;
+        margin-left: 62%;
+    }
+    
+
+    .formularioEntrada {
+        flex-direction: column;
+    }
+    .banner{
+
+        height: 90px;
+        border-radius: 0;
+    }
+    .h1bannerEntrada{
+        margin:0;
+        margin-top: 2%;
+    }
+
+    #formulario {
+
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+
+    .Participar {
+         width: 80%;;
+        
+     
+    }
+
+    .agradecimiento {
+        background-image:url(./imagenes/IMAGEN.png);
+        background-size: cover;
+        
+    }
+    .h1ag,.pA{
+     margin-left: 10%;
+     margin-right:10% ;
+    }
+    .h1ag{
+        text-align: center;
+    }
+    .pAg{
+        margin-top: 10%;
+        text-align: left;
+    }
+    #btn-volver {
+        width: 200px;
+        height: 50px;
+    }    
+    .massobremiranda {
+        grid-area: massobremiranda;
+        background-image: url("./imagenes/masm.png");
+        background-repeat: no-repeat;
+ background-size: cover;
+        height: 910px;
+        
+       
+
+    }
+    footer{
+        grid-area: footer;
+      
+        background-image: url(./imagenes/footerm.png);
+        width: auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 140px;
+        
+    }
+    .cont-a{
+        padding: 2em;
+    }
+
+    h1 {
+        font-size: 60px;
+        white-space: wrap;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 25px;
+        margin: 0;
+
+    }
+
+    p {
+        font-size: 16px;
+        overflow: hidden;
+        white-space: wrap; 
+    }
+    h4{
+        font-size:20px ;
+        margin:0;    
+    margin-bottom: 2%;
+    }
+}
